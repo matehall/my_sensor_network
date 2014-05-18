@@ -14,6 +14,8 @@ void setup() {
 	gw.sendSensorPresentation(CHILD_ID_TEMP, S_TEMP);
 //
 //	metric = gw.isMetricSystem();
+
+
 }
 
 void take_temp_reading() {
