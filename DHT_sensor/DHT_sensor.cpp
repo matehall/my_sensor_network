@@ -63,5 +63,5 @@ void loop() {
 	take_temp_reading();
 	take_humidity_reading();
 	
-	//power_down();
+	//power_down(); // not working
 }
