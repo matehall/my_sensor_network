@@ -4,10 +4,10 @@
 // - extern variable definitions
 // In the appropriate section
 
-#ifndef _DHT_sensor_H_
-#define _DHT_sensor_H_
+#ifndef _LCD_sensor_H_
+#define _LCD_sensor_H_
 #include "Arduino.h"
-//add your includes for the project DHT_sensor here
+//add your includes for the project LCD_sensor here
 #include <Sensor.h>
 unsigned long SLEEP_TIME = 30; // Sleep time between reads (in seconds)
 
@@ -24,9 +24,9 @@ void setup();
 } // extern "C"
 #endif
 
-//add your function definitions for the project DHT_sensor here
+//add your function definitions for the project LCD_sensor here
 
-void setRelayStatus(message_s);
+void handleIncomingMessages(message_s);
 
 //Do not add code below this line
-#endif /* _DHT_sensor_H_ */
+#endif /* _LCD_sensor_H_ */

@@ -41,19 +41,19 @@ void setup() {
 }
 
 void loop() {
-	delay(10);
+	delay(SLEEP_TIME);
 	Serial.print("Checking for measurement:");
 	if (gw.messageAvailable()) {
 		Serial.println("Measurement found:");
 		message_s message = gw.getMessage();
-		setRelayStatus(message);
+		handleIncomingMessages(message);
 	} else {
 		Serial.println("NO measurement found:");
 	}
 
 }
 
-void setRelayStatus(message_s message) {
+void handleIncomingMessages(message_s message) {
 
 	display.setContrast(50);
 	display.setTextSize(1);
