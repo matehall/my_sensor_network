@@ -11,13 +11,14 @@
 #include <Sleep_n0m1.h>
 #include <SPI.h>
 #include <EEPROM.h>
+#include <DallasTemperature.h>
+#include <OneWire.h>
 #include <RF24.h>
 #include <Sensor.h>
-#include <DHT.h>
 
-#define CHILD_ID_HUM 0
-#define CHILD_ID_TEMP 1
-#define HUMIDITY_SENSOR_DIGITAL_PIN 3
+#define ONE_WIRE_BUS 3 // Pin where dallase sensor is connected
+#define MAX_ATTACHED_DS18B20 16
+
 unsigned long SLEEP_TIME = 60; // Sleep time between reads (in seconds)
 
 Sensor gw;

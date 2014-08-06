@@ -1,5 +1,5 @@
 // Do not remove the include below
-#include "DHT_sensor.h"
+#include "Pool_sensor.h"
 
 void setup() {
 	Serial.println("DHT-11 sensor starting up");
@@ -62,6 +62,6 @@ void loop() {
 
 	take_temp_reading();
 	take_humidity_reading();
-	
+
 	//power_down(); // not working
 }
