@@ -5,6 +5,7 @@
 #include <SPI.h>
 #include <EEPROM.h>
 #include <RF24.h>
+#include <Sensor.h>
 
 Sensor gw;
 
@@ -61,20 +62,28 @@ void handleIncomingMessages(message_s message) {
 	display.setCursor(0, 0);
 	Serial.print("messageType:");
 	Serial.println(message.header.messageType);
+	if (message.header.from == dht_sensor_id) {
+		if (message.header.messageType == M_SET_VARIABLE
+				&& message.header.type == V_TEMP) {
+			Serial.println("We have a temp:");
+			int temperature = atoi(message.data);
+			last_known_temp = temperature;
+		}
 
-	if (message.header.messageType == M_SET_VARIABLE
-			&& message.header.type == V_TEMP) {
-		Serial.println("We have a temp:");
-		int temperature = atoi(message.data);
-		last_known_temp = temperature;
-	}
+		if (message.header.messageType == M_SET_VARIABLE
+				&& message.header.type == V_HUM) {
+			Serial.println("We have a hum:");
+			int humidity = atoi(message.data);
+			last_known_hum = humidity;
 
-	if (message.header.messageType == M_SET_VARIABLE
-			&& message.header.type == V_HUM) {
-		Serial.println("We have a hum:");
-		int humidity = atoi(message.data);
-		last_known_hum = humidity;
-
+		}
+	} else if (message.header.from == pool_sensor_id) {
+		double temp = atof(message.data);
+		if (message.header.childId == 0) {
+			pool_temp_1 = temp;
+		} else if (message.header.childId == 1) {
+			pool_temp_2 = temp;
+		}
 	}
 	display.clearDisplay();
 	display.print("T: ");
@@ -87,5 +96,12 @@ void handleIncomingMessages(message_s message) {
 
 	Serial.print("H:");
 	Serial.print(last_known_hum);
+
+	display.print("Pool 1: ");
+	display.println(pool_temp_1);
+
+	display.print("Pool 2: ");
+	display.println(pool_temp_2);
+
 	display.display();
 }

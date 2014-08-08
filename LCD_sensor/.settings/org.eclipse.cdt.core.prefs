@@ -10,7 +10,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLO
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.EXTENDED_FUSES/value=0x05
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.FILE/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.FILE/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.FILE/value=atmega/ATmegaBOOT_168_atmega328.hex
+environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.FILE/value=atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.HIGH_FUSES/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.HIGH_FUSES/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BOOTLOADER.HIGH_FUSES/value=0xDA
@@ -40,7 +40,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.EXTRA_FLAGS/value=
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.F_CPU/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.F_CPU/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.F_CPU/value=16000000L
+environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.F_CPU/value=8000000L
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.MCU/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.MCU/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.MCU/value=atmega328p
@@ -61,7 +61,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.USE_ARCHIVER/value=true
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT.PATH/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT.PATH/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT.PATH/value=Program Files/Arduino/hardware/arduino/avr/variants/${A.BUILD.VARIANT}
+environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT.PATH/value=/C\:/Program Files/Arduino/hardware/arduino/avr/variants/${A.BUILD.VARIANT}
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/A.BUILD.VARIANT/value=standard
@@ -310,7 +310,7 @@ environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.P
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.PLATFORM_FILE/value=C\:/Program Files/Arduino/hardware/arduino/avr/platform.txt
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.PROCESSOR/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.PROCESSOR/operation=replace
-environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.PROCESSOR/value=ATmega328 (5V, 16 MHz)
+environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.PROCESSOR/value=ATmega328 (3.3V, 8 MHz)
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.SIZE.SWITCH/delimiter=;
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.SIZE.SWITCH/operation=replace
 environment/project/it.baeyens.arduino.core.toolChain.release.431025326/JANTJE.SIZE.SWITCH/value=${A.RECIPE.SIZE.PATTERN}

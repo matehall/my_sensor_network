@@ -9,8 +9,7 @@ LCD_sensor.cpp.d LCD_sensor.cpp.o: ../LCD_sensor.cpp ../LCD_sensor.h \
   C:\Program\ Files\Arduino\hardware\arduino\avr\cores\arduino/Printable.h \
   C:\Program\ Files\Arduino\hardware\arduino\avr\cores\arduino/new.h \
   C:\Program\ Files\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h \
-  C:\Program\ Files\Arduino\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h \
-  C:\Program\ Files\Arduino\hardware\arduino\avr\variants\eightanaloginputs/../standard/pins_arduino.h \
+  C:\Program\ Files\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h \
   C:\Users\Markus\Dropbox\development\arduino\libraries\MySensors/Sensor.h \
   C:\Users\Markus\Dropbox\development\arduino\libraries\MySensors/Config.h \
   C:\Users\Markus\Dropbox\development\arduino\libraries\MySensors/Version.h \
@@ -45,9 +44,7 @@ C:\Program\ Files\Arduino\hardware\arduino\avr\cores\arduino/new.h:
 
 C:\Program\ Files\Arduino\hardware\arduino\avr\cores\arduino/USBAPI.h:
 
-C:\Program\ Files\Arduino\hardware\arduino\avr\variants\eightanaloginputs/pins_arduino.h:
-
-C:\Program\ Files\Arduino\hardware\arduino\avr\variants\eightanaloginputs/../standard/pins_arduino.h:
+C:\Program\ Files\Arduino\hardware\arduino\avr\variants\standard/pins_arduino.h:
 
 C:\Users\Markus\Dropbox\development\arduino\libraries\MySensors/Sensor.h:
 

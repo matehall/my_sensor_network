@@ -9,10 +9,15 @@
 #include "Arduino.h"
 //add your includes for the project LCD_sensor here
 #include <Sensor.h>
+
 unsigned long SLEEP_TIME = 30; // Sleep time between reads (in seconds)
 
 uint8_t my_radio_id = 10;
 uint8_t dht_sensor_id = 23;
+uint8_t pool_sensor_id = 24;
+
+double pool_temp_1 = 0.0;
+double pool_temp_2 = 0.0;
 
 //end of add your includes here
 #ifdef __cplusplus
